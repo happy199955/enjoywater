@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>樂水社</title>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Caveat|Noto+Sans+TC" rel="stylesheet">
+        <style type="text/css">
+            body    {font-family: 'Noto Sans TC', sans-serif;
+                    cursor: url("picture/sun_mouse.ani"), auto;
+                    background: url("picture/leaf1.png");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-size: cover;
+                    z-index: 10;}
+            .back   {position: fixed;
+                    top: 0%;left: 0%;
+                    z-index: 20;}
+            .up     {position: fixed;
+                    right: 0%;bottom: 0%;
+                    z-index: 20;}
+            #bub0   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 10%;left: 40%;}
+            #bub0:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub1   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 50%;left: 40%;}
+            #bub1:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub2   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 90%;left: 40%;}
+            #bub2:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub3   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 130%;left: 40%;}
+            #bub3:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub4   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 170%;left: 40%;}
+            #bub4:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub5   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 210%;left: 40%;}
+            #bub5:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub6   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 250%;left: 40%;}
+            #bub6:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub7   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 290%;left: 40%;}
+            #bub7:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            #bub8   {width: 200px;height: 200px;
+                    position: absolute;
+                    top: 330%;left: 40%;}
+            #bub8:hover{border-style: inset;
+                    border-color: white;
+                    border-radius: 500px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            div     {width: 400px;height: 500px;
+                    position: fixed;
+                    top: 10%;}
+            #pic_out{left: 5%;}
+            #post_out{left: 60%;}
+            .pic    {width: 400px;height: 250px;
+                    z-index: 15;}
+        </style>
+        <script type="text/javascript">
+            function start(){
+                var a = document.getElementById("bub0");
+                var b = document.getElementById("bub1");
+                var c = document.getElementById("bub2");
+                var d = document.getElementById("bub3");
+                var e = document.getElementById("bub4");
+                var f = document.getElementById("bub5");
+                var g = document.getElementById("bub6");
+                var h = document.getElementById("bub7");
+                var i = document.getElementById("bub8");
+
+                a.addEventListener("mouseover", mouseInA,false);
+                b.addEventListener("mouseover", mouseInB,false);
+                c.addEventListener("mouseover", mouseInC,false);
+                d.addEventListener("mouseover", mouseInD,false);
+                e.addEventListener("mouseover", mouseInE,false);
+                f.addEventListener("mouseover", mouseInF,false);
+                g.addEventListener("mouseover", mouseInG,false);
+                h.addEventListener("mouseover", mouseInH,false);
+                i.addEventListener("mouseover", mouseInI,false);
+            }
+            function mouseInA(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti0_1.jpg'><img class='pic' src='picture/acti0_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti0_3.jpg'><img class='pic' src='picture/acti0_4.jpg'>"
+            }
+            function mouseInB(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti1_1.jpg'><img class='pic' src='picture/acti1_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti1_3.jpg'><img class='pic' src='picture/acti1_4.jpg'>"
+            }
+            function mouseInC(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti2_1.jpg'><img class='pic' src='picture/acti2_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti2_3.jpg'><img class='pic' src='picture/acti2_4.jpg'>"
+            }
+            function mouseInD(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti3_1.jpg'><img class='pic' src='picture/acti3_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti3_3.jpg'><img class='pic' src='picture/acti3_4.jpg'>"
+            }
+            function mouseInE(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti4_1.jpg'><img class='pic' src='picture/acti4_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti4_3.jpg'><img class='pic' src='picture/acti4_4.jpg'>"
+            }
+            function mouseInF(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti5_1.jpg'><img class='pic' src='picture/acti5_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti5_3.jpg'><img class='pic' src='picture/acti5_4.jpg'>"
+            }
+            function mouseInG(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti6_1.jpg'><img class='pic' src='picture/acti6_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti6_3.jpg'><img class='pic' src='picture/acti6_4.jpg'>"
+            }
+            function mouseInH(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti7_1.jpg'><img class='pic' src='picture/acti7_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti7_3.jpg'><img class='pic' src='picture/acti7_4.jpg'>"
+            }
+            function mouseInI(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+
+                var picOut = document.getElementById("pic_out");
+                var postOut = document.getElementById("post_out");
+
+                picOut.innerHTML = "<img class='pic' src='picture/acti8_1.jpg'><img class='pic' src='picture/acti8_2.jpg'>"
+                postOut.innerHTML = "<img class='pic' src='picture/acti8_3.jpg'><img class='pic' src='picture/acti8_4.jpg'>"
+            }
+            window.addEventListener("load", start, false);
+        </script>
+    </head>
+    <body>
+        <embed src="music/back_music.mp3"  loop=-1 hidden="true">
+        <audio src="music/but2.mp3" id="but_music" controls="controls" hidden="true"></audio>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1853282728059337&type=3"><img id="bub0" src="picture/bubble0.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1863745610346382&type=3"><img id="bub1" src="picture/bubble1.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1863791923675084&type=3"><img id="bub2" src="picture/bubble2.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1883789055008704&type=3"><img id="bub3" src="picture/bubble3.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1898295530224723&type=3"><img id="bub4" src="picture/bubble4.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1898361653551444&type=3"><img id="bub5" src="picture/bubble5.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1953592704695005&type=3"><img id="bub6" src="picture/bubble6.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1953751334679142&type=3"><img id="bub7" src="picture/bubble7.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100001328838064&sk=photos&collection_token=100001328838064%3A2305272732%3A69&set=a.1974132732641002&type=3"><img id="bub8" src="picture/bubble8.png"></a>
+
+        <div id="pic_out"></div>
+        <div id="post_out"></div>
+
+        <a class="back" href="main_page.html"><img src="picture/back.png" width="10%" height="15%"></a>
+        <a class="up" href="#"><img src="picture/whale_up.png" width="100px" height="100px"></a>    
+    </body>
+</html>
+
+
+
+/*

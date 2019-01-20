@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>樂水社</title>
+        <style type="text/css">
+            @keyframes w{
+                0%  {top:calc((100% - 30px)/2);
+                    left:calc((100% - 30px)/2);
+                    width:30px;
+                    height:30px;}
+                100%{top:calc((100% - 300px)/2);
+                    left:calc((100% - 300px)/2);
+                    width:300px;
+                    height:300px;}
+                }
+            @keyframes pop-in {
+                0%  {opacity: 0;
+                    transform: scale(.5);}
+                40% {opacity: 1;}
+                100%{opacity: 1;
+                    transform: scale(1);}
+                }
+            body    {background: #d2f1ff;}
+            .wave   {position:absolute;
+                    top:calc((100% - 30px)/2);
+                    left:calc((100% - 30px)/2);
+                    width:30px;
+                    height:30px;
+                    border-radius:300px;
+                    background:url("picture/sign0.png");
+                    background-attachment:fixed;
+                    background-position:center center;}
+            .wave0  {z-index:2;
+                    background-size:auto 106%;
+                    animation:w 1s forwards;}
+            .wave1  {z-index:3;
+                    background-size:auto 102%;
+                    animation:w 1s .2s forwards;}
+            .wave2  {z-index:4;
+                    background-size:auto 104%;
+                    animation:w 1s .4s forwards;}
+            .wave3  {z-index:5;
+                    background-size:auto 101%;
+                    animation:w 1s .5s forwards;}
+            .wave4  {z-index:6;
+                    background-size:auto 102%;
+                    animation:w 1s .8s forwards;}
+            .wave5  {z-index:7;
+                    background-size:auto 100%;
+                    animation:w 1s 1s forwards;}
+            .pop2   {z-index: 9;
+                    animation-delay: 1s;
+                    animation: pop-in .5s 1.4s cubic-bezier(0, .8, .4, 1.25) forwards;
+                    display: inline-block;
+                    transform: scale(1);
+                    opacity: 0;
+                    position: absolute;
+                    top: 20%;left: 62%;}
+            .pop    {animation-delay: 1s;
+                    animation: pop-in .5s 1.4s cubic-bezier(0, .8, .4, 1.25) forwards;
+                    display: inline-block;
+                    transform: scale(1);
+                    opacity: 0;
+                    text-decoration-line: none;
+                    color: #074990;
+                    text-shadow: shadow1, shadow2, shadow3;
+                    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+                    font-size: 5em;
+                    background: #d2f1ff;
+                    position: absolute;
+                    top: 80%;left: 35%;
+                    }
+        </style>
+    </head>
+    <body>
+        <embed src="music/join_music.mp3"  loop="true" hidden="true">
+        <div class="wave wave5"></div>
+        <div class="wave wave4"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave1"></div>
+        <div class="wave wave0"></div>
+        <a class="pop2" href="main_page.html"><img src="picture/check.png" width="20%" height="25%"></a>
+        <div class="pop">WELCOME!</div>
+    </body>
+</html>

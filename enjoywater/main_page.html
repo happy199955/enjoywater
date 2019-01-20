@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>樂水社</title>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Righteous" rel="stylesheet">
+        <style type="text/css">
+            body    {font-family: 'Baloo Tamma', cursive;
+                    cursor: url("picture/sun_mouse.ani"), auto;
+                    background: url("picture/pool_big.jpg");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-size: cover;}
+            .EW     {font-family: 'Righteous', cursive;
+                    font-size: 5em;
+                    color: white;
+                    position: absolute;
+                    top: 5%;left: 35%;
+                    align-self: center;
+                    text-decoration-line: underline;
+                    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);}
+            .intr   {font-family: 'Baloo Tamma', cursive;
+                    font-size: 2em;
+                    position: absolute;
+                    top: 60%;left: 10%;
+                    text-decoration-line: none;}
+            .intr:hover{cursor: pointer;
+                    font-size: 3em;
+                    border-style: inset;
+                    border-color: white;
+                    border-radius: 15px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            .mem    {font-family: 'Baloo Tamma', cursive;
+                    font-size: 2em;
+                    position: absolute;
+                    top: 60%;left: 39%;
+                    text-decoration-line: none;}
+            .mem:hover{cursor: pointer;
+                    font-size: 3em;
+                    border-style: inset;
+                    border-color: white;
+                    border-radius: 15px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            .acti   {font-family: 'Baloo Tamma', cursive;
+                    font-size: 2em;
+                    position: absolute;
+                    top: 60%;left: 60%;
+                    text-decoration-line: none;}
+            .acti:hover{cursor: pointer;
+                    font-size: 3em;
+                    border-style: inset;
+                    border-color: white;
+                    border-radius: 15px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            .cont   {font-family: 'Baloo Tamma', cursive;
+                    font-size: 2em;
+                    position: absolute;
+                    top: 60%;left: 80%;
+                    text-decoration-line: none;}
+            .cont:hover{font-size: 3em;
+                    border-style: inset;
+                    border-color: white;
+                    border-radius: 15px;
+                    text-shadow: 0 0 8px rgba(255,255,255,1);
+                    background: rgba(255,255,255,.5);}
+            marquee {position: relative;
+                    top: -10%;left: -2%;
+                    font-size: 20px;
+                    color: #ff9914;}
+            .back_but{position: absolute;
+                    top: 8%;left: 25%;}
+        </style>
+        <script type="text/javascript">
+            function start(){
+                var intrr = document.getElementById("introduction");
+                var memm = document.getElementById("member");
+                var actii = document.getElementById("activity");
+                var contt = document.getElementById("contact");
+
+                intrr.addEventListener("mouseenter", mouse,false);
+                memm.addEventListener("mouseenter", mouse,false);
+                actii.addEventListener("mouseenter", mouse,false);
+                contt.addEventListener("mouseenter", mouse,false);
+            }
+
+            function mouse(){
+                var but_mus = document.getElementById("but_music");
+                but_mus.play();
+            }
+
+            window.addEventListener("load", start, false);
+        </script>
+    </head>
+    <body>
+        <embed src="music/back_music.mp3"  loop=-1 hidden="true">
+        <audio src="music/but1.mp3" id="but_music" controls="controls" hidden="true"></audio>
+        <div class="EW">Enjoy Water
+            <marquee direction="right" height="30" width="500" scrollamount="5" behavior="alternate">衝浪浮潛獨木舟~陽光沙灘比基尼~歡迎加入樂水社!!</marquee>
+        </div>
+        <a id="introduction" class="intr" href="introduction.html">Introduction</a>
+        <a id="member" class="mem" href="member.html">Member</a>
+        <a id="activity" class="acti" href="activity1.html">Activity</a>
+        <a id="contact" class="cont" href="contact.html">Contact</a>
+        <a class="back_but" href="first_page.html"><img src="picture/back.png" width="10%" height="15%"></a>
+    </body>
+</html>

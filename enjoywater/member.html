@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>樂水社</title>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Caveat|Noto+Sans+TC" rel="stylesheet">
+        <style type="text/css">
+            body    {font-family: 'Noto Sans TC', sans-serif;
+                    cursor: url("picture/sun_mouse.ani"), auto;
+                    background: url("picture/pool_big.jpg");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-size: cover;}
+            .A      {font-family: 'Abril Fatface', cursive;
+                    font-size: 4em;
+                    font-size-adjust: unset;
+                    color: #ff9914;
+                    text-decoration-line: underline;
+                    position: absolute;
+                    top: 8%;left: 40%;
+                    width: 500px;height: 500px;
+                    text-align: center;
+                    background: inherit;
+                    z-index:11;
+                    box-shadow:  0 0 10px 6px rgba(0,0,0,.5);
+                    background: rgba(255,255,255,.8);
+                    border-radius: 20px;}
+            .B      {font-family: 'Caveat', cursive;
+                    position: absolute;
+                    top: 10%;left: 8%;
+                    width: 450px;
+                    color: #e66f00;
+                    font-size: 20px;
+                    z-index: 20;}
+            .C      {position: absolute;
+                    top: 10%;left: 15%;}
+            .mem_pic{position: absolute;
+                    top: 80%;left: 25%;
+                    z-index: 25;}
+            .back   {position: absolute;
+                    top: 77%;left: 73%;
+                    z-index: 30;
+                    background-attachment: fixed;}
+        </style>
+        <script type="text/javascript">
+            var i = 14;
+            var MEM_NAME = ['社長','活動副社長','行政副社長','總務','活動','活動','美宣','美宣','文書','文書','網管','網管','器材','器材','出納'];
+            var NAME = ['蘇高信(發Q)','陳怡文(發白)','洪偉廷(重G)','呂迎蓁(小剛)','李文馨(Seafood)','練日森(少女)','傅育萱(四兩)','黃佳蓉(九五)','李佳瑜(燒賣)','何帛霖(紅牌)','蔡佳沂(乘一)','王美喬(網美)','鄭裕庭(八煙)','朱騰彬(蛋疼)','蘇品叡(母湯)'];
+            var TEXT = ['樂水社對我來說是一個充滿許多新奇事物的社團，像是衝浪、重裝潛水、浮潛等等，全部都是當初進大學前從來沒有想過的，在許多的學長姊鼓勵下，我才會接觸這些水上活動，除此之外學長姐也帶著我們探索基隆之美，讓我們能夠更加了解我們生活的這塊土地。',
+            '樂水社是一個歡樂的地方，有一大群朋友陪你做熱血瘋狂的事，你可以肆無忌憚得大笑，真誠的做自己，或許有時候有爭執或意見不合，但是大家都是為了社團能夠經營更好，心都是團結在一起的，不管任何活動每個人都會互相幫忙，學長姐也會細心的提醒許多細節和要注意的事情，並適時的協助，樂水社真的是一個溫暖的大家庭。',
+            '起初剛進樂水社單純是因為覺得這個社團很酷，有許多的水域類活動。後來才發現不止是很酷還能學到很多東西。樂水社帶給我的感覺就像是在家裡一樣，很輕鬆自在，在參加活動時不會有太多的拘束，能夠盡情的玩樂。',
+            '樂水社是還沒進海大前就有在關注的社團，進來之後就馬上加入社團參加活動，在社團裡受到很多學長姐的照顧，慢慢開始喜歡上這個社團，社團真的是一個大家庭，在這裡大家互相照顧，感覺就像一個大家庭。',
+            '大一時跟著社團體驗了許多從未體驗過的水上活動，像是潛水、衝浪、獨木舟，這裡是個很溫暖、很熱情、很陽光的地方，在這裡揮灑青春很值得。',
+            '樂水社，在我大一時，就給了我一種家的感覺，儘管我跟班上大家不太熟，但這裡的大家總是非常熱心地找我聊天或揪出去玩，讓我的大衣生活非常的充實，非常的豐富，如果今天我沒有加入這個社團，我一定會後悔一輩子，而且無聊的過完我的大一生活。',
+            '很溫暖，很有家的感覺，每次帶活動，大家都能一起開開心心的，很棒。希望我們布置的社辦大家都能喜歡，也希望大家能多留在社辦吃吃午餐和玩玩遊戲。',
+            '樂水社就像是一個家，他給我溫暖也給我歸屬感，和大家相處的過程中得到很多歡樂希望能把這些歡樂分享給學弟妹~~~',
+            '我覺得很像一個大家庭，有什麼不會的，學長姐們都很熱心的教導我，教我衝浪、浮潛、划獨木舟等等，有些人水性比較不好，他們也都會隨時注意大家的安全。然後不只水上活動，陸上的活動也都很精彩、有趣，即使冬天不能玩水，但社團也不會因此而停止聯絡，還是會揪許多陸上活動來玩，會不斷的聯繫感情，所以覺得很溫馨。',
+            '樂水社對我來說就像是一個家，凝聚一群愛玩水的人，讓我認識許多朋友，和志同道合的朋友一起出去玩非常開心。',
+            '好玩、有趣、有點鬧、有時候會累，但是總是充滿歡樂與溫暖的社團。希望能利用現有的職務讓大家有更多更方便的管道接觸到、認識到樂水社。接觸到更多我們的活動資訊，並喜歡上樂水這個社團。',
+            '很慶幸我第一個玩的社團就是樂水社，從高中開始一直很想體驗的水上活動在這裡都玩過無數遍了，學長姊都很照顧大家，大家感情都很好，像一個大家庭。加入樂水社是個不會後悔的決定。',
+            '樂水社，一個帶給我很多快樂的社團，社團裡很多幽默的人，和他們聊天、相處常常帶給我很多的歡笑，在社團的一年裡，我不僅僅很快樂，也學到了很多東西，這麼好的社團我想介紹給更多人，讓更多人知道樂水社。',
+            '樂水社的成員來自各個不同的系，但只要當大家聚在一起的時候總會讓我有一種特別的歸屬感，就好像一個家一樣，在這裡我認識了很多志同道合的朋友，在樂水，從來不會感覺到寂寞，因為大家都有一顆炙熱的樂水心。',
+            '既清新又健康，有體育活動也有團康活動，體育性社團卻不失人跟人之間有的溫度。好好教學弟妹各種水上活動的技能和知識，並也保持著熱水人該有的待人溫度和玩水的熱情。']
+
+            function start(){
+                var butLeft = document.getElementById("but_left");
+                var butRight = document.getElementById("but_right");
+
+                butLeft.addEventListener("click", clickLeft, false);
+                butRight.addEventListener("click", clickRight, false);
+            }
+
+            function clickLeft(){
+                var Pic = document.getElementById("pic");
+                var mainText = document.getElementById("main_text");
+                
+                if(i==0){
+                    i = 14;
+                }
+                else{
+                    i--;
+                }
+
+                Pic.setAttribute("src","picture/mem" + i + ".jpg");
+                mainText.innerHTML = "<div class='B'>" + NAME[i] + "<br><br>對樂水社的感想：<br><br>" + TEXT[i] +　"</div>";
+            }
+
+            function clickRight(){
+                var Pic = document.getElementById("pic");
+                var mainText = document.getElementById("main_text");
+                
+                if(i==14){
+                    i = 0;
+                }
+                else{
+                    i++;
+                }
+
+                Pic.setAttribute("src","picture/mem" + i + ".jpg");
+                mainText.innerHTML = "<div class='B'><h1>" + NAME[i] + "</h1><br>對樂水社的感想：<br><br>" + TEXT[i] +　"</div>";
+            }
+
+            window.addEventListener("load",start,false);
+        </script>
+    </head>
+    <body>
+        <embed src="music/back_music.mp3"  loop=-1 hidden="true">
+        <form class="mem_pic" action="#">
+            <input id="but_left" type="button" value="&lt">
+            <input id="but_right" type="button" value="&gt">
+        </form>
+        <img id="pic" class="C" src="picture/mem_water1.png" width="300px" height="400px">
+        <div id="main_text" class="A"></div>
+        <a class="back" href="main_page.html"><img src="picture/back.png" width="20%" height="25%"></a>
+    </body>
+</html>

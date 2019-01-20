@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>樂水社</title>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Caveat|Noto+Sans+TC" rel="stylesheet">
+        <style type="text/css">
+            body    {font-family: 'Noto Sans TC', sans-serif;
+                    cursor: url("picture/sun_mouse.ani"), auto;
+                    background: url("picture/pool_big.jpg");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-size: cover;}
+            .A      {font-family: 'Abril Fatface', cursive;
+                    font-size: 4em;
+                    font-size-adjust: unset;
+                    color: #ff9914;
+                    text-decoration-line: underline;
+                    position: absolute;
+                    top: 10%;left: 10%;
+                    width: 500px;height: 500px;
+                    text-align: center;
+                    background: inherit;
+                    z-index:11;
+                    box-shadow:  0 0 10px 6px rgba(0,0,0,.5);
+                    background: rgba(255,255,255,.8);
+                    border-radius: 20px;}
+            .B      {font-family: 'Caveat', cursive;
+                    position: absolute;
+                    top: 28%;left: 15%;
+                    color: #e66f00;
+                    font-size: 20px;
+                    z-index: 20;}
+            #map    {position: absolute;
+                    top: 10%;left: 55%;}
+            .back   {position: absolute;
+                    top: 75%;left: 40%;
+                    z-index: 20;
+                    background-attachment: fixed;}
+        </style>
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <embed src="music/back_music.mp3"  loop=-1 hidden="true">
+        <div class="A">Who we are?</div>
+        <div class="B">
+            創立於1987年<br><br>
+            我們的理念：<br>
+            「仁者樂山，智者樂水。<br>
+            融陸空情趣於水戲，展壯志遨遊於四海。」<br><br>
+            只要你對水上活動有興趣，<br>
+            我們這個大家庭都歡迎你加入唷~！<br><br>
+            <h2>Enjoy Water!!!</h2>
+        </div>
+        <iframe id="map" width='500px' height='500px' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=基隆市中正區北寧路2號學生活動中心5F&z=16&output=embed&t='></iframe>
+        <a class="back" href="main_page.html"><img src="picture/back.png" width="10%" height="15%"></a>
+    </body>
+</html>
